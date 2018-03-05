@@ -4,7 +4,7 @@ func aboutInterfaces() {
 	bob := new(human)     // bob is a kind of *human
 	rspec := new(program) // rspec is a kind of *program
 
-	assert(runner(bob) == __runner__) // conformed interfaces need not be declared, they are inferred
+	assert(runner(bob) == bob) // conformed interfaces need not be declared, they are inferred
 
 	assert(bob.milesCompleted == 0)
 	assert(rspec.executionCount == 0)
